@@ -18,12 +18,10 @@ import com.example.Exercice2.Models.Etudiant;
 @RequestMapping("/api/v1/students")
 public class EtudiantRestController {
 
-    private ArrayList<Etudiant> studentList = new ArrayList<Etudiant>();
+    private ArrayList<Etudiant> studentList;
 
     @GetMapping
     public ArrayList<Etudiant> getAllStudents() {
-        Etudiant temp = new Etudiant("Gilles", "Michel", 13);
-        studentList.add(temp);
         return studentList;
     }
 
